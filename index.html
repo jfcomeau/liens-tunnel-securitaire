@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liens Médias & Actualités</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+      }
+
+      .container {
+        max-width: 400px;
+        width: 100%;
+        text-align: center;
+      }
+
+      .header {
+        margin-bottom: 40px;
+      }
+
+      .profile-img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: white;
+        margin: 0 auto 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 36px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+      }
+
+      .profile-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+
+      h1 {
+        color: white;
+        font-size: 28px;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+
+      .subtitle {
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+
+      .links {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      .link-button {
+        display: block;
+        padding: 16px 24px;
+        background: rgba(255, 255, 255, 0.95);
+        color: #333;
+        text-decoration: none;
+        border-radius: 12px;
+        font-weight: 500;
+        font-size: 16px;
+        transition: all 0.3s ease;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+      }
+
+      .link-button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+        background: white;
+      }
+
+      .link-button:active {
+        transform: translateY(0);
+      }
+
+      .footer {
+        margin-top: 40px;
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 14px;
+      }
+
+      .footer a {
+        color: rgba(255, 255, 255, 0.9);
+        text-decoration: none;
+        font-weight: 500;
+        margin: 0 15px;
+        transition: color 0.3s ease;
+      }
+
+      .footer a:hover {
+        color: white;
+        text-decoration: underline;
+      }
+
+      @media (max-width: 480px) {
+        .container {
+          padding: 0 16px;
+        }
+
+        h1 {
+          font-size: 24px;
+        }
+
+        .link-button {
+          padding: 14px 20px;
+          font-size: 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="profile-img">
+          <img src="./avatar.png" alt="Tunnel sécuritaire pour tous" />
+        </div>
+        <h1>Tunnel sécuritaire pour tous</h1>
+        <p class="subtitle">Restons informé</p>
+      </div>
+
+      <div class="links">
+        <a
+          href="https://ici.radio-canada.ca/nouvelle/2167920/tunnel-saint-maurice-petition-reponse"
+          class="link-button"
+          target="_blank"
+          rel="noopener"
+        >
+          🌍 Ici Radio-Canada : Chemins de fer Québec-Gatineau veut discuter du
+          tunnel Saint-Maurice avec la Ville
+        </a>
+
+        <a
+          href="https://www.fm1069.ca/audio/701346/tunnel-ste-cecile-st-sacrement-une-petition-pour-ameliorer-son-etat-mediocre"
+          class="link-button"
+          target="_blank"
+          rel="noopener"
+        >
+          🎧 106.9 FM : Tunnel Ste-Cécile / St-Sacrement : Une pétition pour
+          améliorer son état médiocre
+        </a>
+
+        <a
+          href="https://www.lenouvelliste.ca/actualites/actualites-locales/trois-rivieres/2025/05/26/tunnel-saint-maurice-ce-nest-pas-une-job-pour-aller-sur-la-lune-IGKA7PKHWRDLVPYMCTOTLA6X34/"
+          class="link-button"
+          target="_blank"
+          rel="noopener"
+        >
+          📄 Le Nouvelliste : Tunnel Saint-Maurice : ce n'est pas une job pour
+          aller sur la Lune
+        </a>
+
+        <a
+          href="https://ici.radio-canada.ca/ohdio/premiere/emissions/toujours-le-matin/segments/rattrapage/2079789/une-petition-pour-refection-tunnel-boulevard-saint-maurice"
+          class="link-button"
+          target="_blank"
+          rel="noopener"
+        >
+          🎧 Ici Radio-Canada : Une pétition pour réfection du tunnel
+          Boulevard-Saint-Maurice
+        </a>
+
+        <a
+          href="https://ici.radio-canada.ca/nouvelle/2167319/petition-tunnel-saint-maurice-refection?depuisRecherche=true"
+          class="link-button"
+          target="_blank"
+          rel="noopener"
+        >
+          🌍 Ici Radio-Canada : Une pétition pour la réfection du tunnel du
+          boulevard du Saint-Maurice
+        </a>
+
+        <a
+          href="https://ici.radio-canada.ca/info/videos/1-10389278/un-tunnel-en-decrepitude-a-trois-rivieres"
+          class="link-button"
+          target="_blank"
+          rel="noopener"
+        >
+          📺 Ici Radio-Canada : Un tunnel en décrépitude à Trois-Rivières
+        </a>
+
+        <a
+          href="https://ici.radio-canada.ca/info/videos/1-10389597/citoyens-denoncent-piteux-etat-tunnel-saint-maurice-a-trois-rivieres"
+          class="link-button"
+          target="_blank"
+          rel="noopener"
+        >
+          📺 Ici Radio-Canada : Citoyens dénoncent piteux état du tunnel
+          Saint-Maurice à Trois-Rivières
+        </a>
+      </div>
+
+      <div class="footer">
+        <a
+          href="https://www.change.org/tunnelsecuritairepourtous"
+          target="_blank"
+          rel="noopener"
+        >
+          ✍️ Notre Pétition
+        </a>
+
+        <a
+          href="https://www.facebook.com/profile.php?id=61576462147329"
+          target="_blank"
+          rel="noopener"
+        >
+          📘 Notre Page Facebook
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
